@@ -30,12 +30,13 @@
             <button><p>Tell me more</p></button>
            </div>
         </div>
-
         <div class="container">
     <div class="services">
+        <header>
       <h1>services</h1>
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque quaerat enim debitis ipsa qui. Fuga quasi quaerat molestias veritatis, praesentium unde nobis at possimus animi dignissimos repellat ipsum et qui.</p>
-     <div class="service-icons">
+    </header>
+      <div class="service-icons">
     <!-- make this liquid *3-->
     <ul>
         <li>
@@ -69,6 +70,9 @@
         </header>
          <!--grid gallery here-->
         <div class="gallery">
+            <div class="item">
+                <img src="" alt="">
+            </div>
         </div>
         </div>
         <div class="about">
@@ -116,10 +120,14 @@
                     <h1>Contact us</h1>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, incidunt ad, sequi excepturi distinctio, sint qui voluptatum laboriosam odio modi perferendis id quia dignissimos possimus? Repudiandae minima culpa eum fuga!</p>
                 </header>
-                <div class="form-container"></div>
-                <form action="">
+                <div class="form-container">
+                <form action="" class="form">
+                    <header>
                         <h3>Quick Contact</h3>
                         <h4>Contact us today, and get reply with in 24 hours!</h4>
+                    </header>
+                    <div class="form-allign">
+                        <div class="form-left">
                         <fieldset>
                           <input placeholder="Your name" type="text" tabindex="1" required autofocus>
                         </fieldset>
@@ -129,26 +137,31 @@
                         <fieldset>
                           <input placeholder="Your Phone Number" type="tel" tabindex="3" required>
                         </fieldset>
-                        <fieldset>
-                          <input placeholder="Your Web Site starts with http://" type="url" tabindex="4" required>
-                        </fieldset>
-                        <fieldset>
+                    </div>
+                        <fieldset class="form-right">
                           <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
                         </fieldset>
-                        <fieldset>
+                  
+                </div>
+                        <fieldset class="fieldset-button">
                           <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Send Message</button>
                         </fieldset>
-                      </form>          
+                      </form>      
+                    </div>    
     </div>
     <footer>
         <p>Copyright</p>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
-        <i></i>
+        <div class="icons">
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-twitter"></i>
+    </div>
+    <div class="policy">
         <p>Privacy Policy</p>
         <p>Terms of use</p>
+    </div>
     </footer>
 </div>
 </body>
