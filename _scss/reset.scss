@@ -1,0 +1,73 @@
+@import "utilities/variables";
+
+* {
+    box-sizing: border-box;
+  }
+html{
+    width: 100%;
+    height: auto;
+    scroll-behavior: smooth;
+}
+body{
+    padding: $default-padding;
+    margin:$default-margin;
+    color: $default-color;
+  
+}
+h1,h2,h3,h4,h5,h6{
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+font-weight: 700;
+color:#333;
+text-align: center;
+line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+}
+ul{
+   
+    list-style: none;
+}
+fieldset{
+    border:0; 
+ }
+ textarea{
+    height: 100%;
+    width: auto;
+}
+p{
+    text-align: center;
+font-weight: 400;
+color:#777;
+font-size: 1.2em;
+line-height: 1.1em;
+}
+header{
+    display: flex;
+    flex-flow: column nowrap;
+ align-items: center;
+p{
+    font-style: italic;
+}
+}
+button{
+    font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
+   
+    padding:1em 2.2em 1em 2.2em;
+    margin-top:1.5em;
+    background-color:#fed136;
+    border: none;
+    border-radius: 0.3em;
+    font-size: 1.2em;
+   a{
+    text-transform: uppercase;
+    color:white;
+       
+    font-weight: 900;
+   }
+    &:hover{
+       background: #fec503;
+       cursor: pointer;
+    }
+}

@@ -1,0 +1,83 @@
+@import "utilities/variables";
+#contact{
+    
+    padding-top:$padding-top;
+    background-color:darkseagreen;
+    background-image: url("/resources/map.jpeg");
+    height:45em;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+h1,p{
+    color: white;
+}
+h1{
+    font-size: 2.5em;
+}
+header{
+    margin-top:5em;
+    
+}
+    
+}
+.form-container{
+    display: flex;
+    flex-flow: column nowrap;
+ align-items: center;
+  padding:$form-padding;
+  input{
+     height: 1em;
+     width: 35em;
+     padding: 2em;
+    
+     border-width: 0.2em;
+     border-radius: 0.5em;
+     border-style: solid;
+     font-weight: 900;
+     color: #222;
+    &:hover{
+        border-color: yellow;
+    }
+    &::placeholder{
+       color: #777;
+       font-weight: 200;
+    }
+  }
+  textarea{
+    height: 15em;
+    width: 35em ;
+    padding: 1.5em;
+    color: #222;
+    border-width: 0.2em;
+    border-radius: 0.5em;
+    border-style: solid;
+    font-weight: 900;
+    &:hover{
+        border-color: yellow;
+    }
+    &::placeholder{
+        color: #777;
+        font-weight: 200;
+     }
+  }
+}
+.form-allign{
+    display: flex;
+    flex-flow: row nowrap;
+}
+.form-right{
+    width: 100%;
+    height: auto;
+}
+
+.form-left{
+    width: 100%;
+    height: auto;
+}
+
+.fieldset-button{
+    display: flex;
+   justify-content: center;
+  
+}

@@ -1,0 +1,62 @@
+@import "utilities/variables";
+#team{
+    margin-top: 10em;
+ margin-bottom: 10em;
+    header{
+        padding-top:$padding-top;
+    }
+    .all-members{
+        display: flex;
+     
+        justify-content: center;
+        margin: 2em 0 2em 0;
+        .member{
+             margin: 0 6em 0 6em;
+             display: flex;
+             align-items: center;
+             flex-flow: column nowrap;
+        }    
+        .member-img{
+            width:100%;
+            height:auto;
+            overflow:hidden;
+            position:relative;
+            border-radius: 50%;
+          }
+             .gallery__img{
+                width: 100%;
+                height: auto;
+               
+                
+             }      
+        p{
+               padding: 0;
+               margin: 0;
+               font-style: italic;
+               text-align: center;
+               line-height: 1.2em;
+           }
+        h3{
+            padding: 0;
+            margin: 0; 
+        }
+          .socials{
+     align-items: center;
+         margin:0.5em;
+       i{
+        margin: 0.2em;
+        background-color: #222;
+        color: white;
+        border-radius: 1em;
+        padding: 0.5em;
+        font-size: 1.2em;
+        transition: all 0.3s ease-out;
+        &:hover{
+          background-color: $title-color;
+          cursor: pointer;
+        
+        }
+       }
+    }
+    }
+}
