@@ -10,6 +10,9 @@ $default-margin-i:0 0.5em 0 0.5em;
 $footer-padding:1em 5em 1em 5em;
 $title-color:#fec503;
 $background-img:url("/resources/picture1.jpg");
+* {
+    box-sizing: border-box;
+  }
 html{
     width: 100%;
     height: auto;
@@ -20,6 +23,7 @@ body{
     margin:$default-margin;
     color: $default-color;
     box-sizing: border-box;
+  
 }
 h1,h2,h3,h4,h5,h6{
     text-transform: uppercase;
@@ -29,13 +33,6 @@ color:#333;
 text-align: center;
 line-height: 1.5em;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
- 
-}
-
 a{
     text-decoration: none;
 }
@@ -56,8 +53,6 @@ font-weight: 400;
 color:#777;
 font-size: 1.2em;
 line-height: 1.1em;
-
-
 }
 fieldset{
     border:0; 
@@ -136,34 +131,29 @@ nav{
         font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 900;
         text-transform: uppercase;
-        
      }
-
         p{
             color: white;
             font-weight: 600;
             font-size: 1em;
-        }
-       
-    
+        }  
    } 
 
 button{
     font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
    
-    padding:0.3em 2.2em 0.3em 2.2em;
+    padding:1em 2.2em 1em 2.2em;
     margin-top:1.5em;
     background-color:#fed136;
     border: none;
     border-radius: 0.3em;
     font-size: 1.2em;
-   
+   a{
     text-transform: uppercase;
-    p{
-        color:white;
+    color:white;
        
-        font-weight: 900;
-    }
+    font-weight: 900;
+   }
     &:hover{
        background: #fec503;
        cursor: pointer;
@@ -175,7 +165,6 @@ button{
     display: flex;
         flex-flow: column nowrap;
      align-items: center;
-     background-color: white;
      margin: 0 1.5em 0 1.5em;
 }
 .service-icons{
@@ -208,7 +197,6 @@ button{
 }
 
 #portfolio{
-    background-color:cornsilk;
     padding:0 10em 0 10em;
     header{
         padding-top:$padding-top;
@@ -252,6 +240,7 @@ button{
                             -webkit-transition-delay:.2s;
                             transition-delay:.2s;
                             }
+                        }
         .middle {
             width:100%;
             height:100%;
@@ -291,7 +280,7 @@ button{
                     box-shadow:0 0 5px #fff;
                    }
                 }
-        }
+        
              .gallery__img{
                 width: 100%;
                 height: auto;
@@ -314,9 +303,101 @@ button{
 #about{
     
     padding-top:$padding-top;
-    background-color: cyan;
+    .timeline {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 auto; 
+      }
+      .timeline-item {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        p{
+            text-align: left;
+        }
+      }
+      .timeline-item__date {
+        order: 2;
+        text-align: center;
+        color: $title-color;
+        text-shadow: 2px 2px 5px black;
+        font-size: 28px;
+        background: linear-gradient(
+          to right,
+          white 46%,
+          #f1f1f1 46%,
+          #f1f1f1 52%,
+          white 56%
+        );
+        font-family: Verdana;
+        flex-basis: 100px;
+        display: flex;
+         span {
+          margin: auto;
+          background: #333;
+          border: 4px solid #f1f1f1 ;
+          border-radius: 50%;
+          padding: 25px 6px;
+          box-shadow: 2px 1px 6px #f1f1f1 ;
+          transition: all 0.3s ease-out;
+         &:hover{
+             background-color:white;
+             
+         }
+        }
+      }
+      .timeline-item__desc {
+          display: flex;
+        order: 3;
+        width: 80%;
+        height: auto;
+        padding-left: 1em;
+        align-items: center;
+        flex-flow: column nowrap;
+        .about-img{
+            width: 70%;
+        
+        img{
+            transition: all 0.5s ease-out;
+            width: 100%;
+            height: auto;
+            &:hover{
+            box-shadow:
+                1px 1px #222,
+                2px 2px #222,
+                3px 3px #222,
+                4px 4px #222,
+                5px 5px #222;
+        -webkit-transform: translateX(-3px);
+        transform: translateX(-3px);
+            }
+    }
+        }
+      }
+      @media (min-width: 640px){
+  .timeline-item__desc,
+  .timeline-item__hidden {
+   width: 40%
+  }
+  .timeline-item--flipped {
+      p{
+          text-align: right;
+      }
+    .timeline-item__desc {
+      order: 1;
+      text-align: right;
+      padding-right: 1em
+    }
+  .timeline-item__hidden {
+      order: 3;
+    }
+  }
+}
+      
 }
 #team{
+    margin-top: 10em;
  margin-bottom: 10em;
     header{
         padding-top:$padding-top;
@@ -463,9 +544,8 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: $footer-padding;
-   
-    
+   margin: 0 10em 0 10em;
+    padding:1em 0 1em 0;
     .icons{
       
 
