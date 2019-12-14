@@ -1,11 +1,12 @@
 @import "utilities/variables";
 footer{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
    margin: 0 10em 0 10em;
     padding:1em 0 1em 0;
     .icons{
+        margin-right: 5em;
       i{
           margin: $default-margin-i;
           background-color: #222;
@@ -13,24 +14,30 @@ footer{
     }
     .policy{
         display: flex;
-        p{
-            margin: $default-margin-i;
-            color: chartreuse;
-            &:hover{
-                text-decoration: underline;
-                cursor: pointer;
-            }
+        
+    }
+    p{
+        margin-right:2em;
+        color: chartreuse;
+        &:hover{
+            text-decoration: underline;
+            cursor: pointer;
         }
     }
    .social{
         color: white;
-        padding: 0.7em;
-          border-radius: 1.2em;
+        padding: 0.5em;
+          border-radius: 50%;
           transition: all 0.3s ease-out;
           &:hover{
             background-color: $title-color;
             cursor: pointer;      
           }
         }
+    }
+    .footer-end{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; 
     }
    
