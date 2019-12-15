@@ -1,0 +1,164 @@
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 479px) {
+    // nav
+  .nav-content{
+display: flex;
+align-items:center;
+    button{
+        display: block;
+     padding: 0.5em;
+     margin:0.2em; 
+  }
+
+    .hamburger {
+       
+        font-size:1em;
+       
+        z-index:2;
+    }
+    nav {display:none;}
+    nav ul {
+        display:flex;
+        flex-flow: column nowrap;
+       align-items: center;
+    }
+}
+.content{
+    margin:5em 0 5em 0;
+    h3{
+    line-height:1em;
+    font-size: 1em;
+    }
+    div{
+        font-size: 2em;
+       
+    }
+    button{
+        padding: 0.8em 1.1em;
+    }
+
+}
+.viewport{
+  height: 100%;
+  width: auto;
+}
+// nav ends here
+#services{
+    .service-icons ul{
+        display: flex;
+        flex-flow: column wrap;
+        margin: 0;
+        padding: 0;
+
+    }
+}
+    #portfolio{
+        margin: 0;
+            padding: 0;
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 100vw);
+            grid-gap: 1em;   
+            align-items: center;
+            justify-content: center;
+            margin:0;
+            .item{
+                height: auto;
+                width: 100%;
+            }
+           .item-img {
+            width: 100%;
+            height: auto;
+          
+           .picture{
+                width: 100%;
+                height: auto;
+             }
+            }
+        }
+    }
+    #about{
+        .timeline{
+            display: flex;
+            flex-flow: column nowrap;
+            h2{
+                font-size: medium;
+            }
+            p{
+                font-size: medium;
+            }
+            .about-img{
+                width: 100%;
+                height: auto;
+            }
+            .timeline-item__desc{
+                padding-right: 1em;
+                padding-left: 0;
+            }
+        }
+    }
+    #team{
+        .all-members{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+    }
+
+    #contact{
+        .form-container {
+            width: 100%;
+            height: auto;
+            align-items: initial;
+            input{
+                width: 100%;
+                height: auto;
+                padding: 2em;
+            }
+            .form-allign{
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: center;
+        }
+        textarea{
+            height: auto;
+
+width: 100%;
+        }
+           
+        }
+    }
+
+footer{
+    display: flex;
+   margin:0;
+    flex-flow: row nowrap;
+    p{
+        font-size: 0.8em;
+        margin:0;
+        align-self:flex-start;
+        line-height: 2em;
+    }
+    .icons{
+        display: flex;
+        margin:0;
+        font-size: 0.8em;
+    
+    flex-flow: row nowrap;
+    }
+    .policy{
+        margin-right: 0.5em;
+    }
+}
+}
+    
+
+
+
+    
+  

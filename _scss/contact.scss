@@ -1,8 +1,7 @@
 @import "utilities/variables";
 #contact{
     
-    padding-top:$padding-top;
-    background-color:darkseagreen;
+    padding-top:1em;
     background-image: url("../resources/map.jpeg");
     height:45em;
     background-position: center;
@@ -16,7 +15,7 @@ h1{
     font-size: 2.5em;
 }
 header{
-    margin-top:5em;
+    margin-top:1em;
     
 }
     
@@ -79,6 +78,9 @@ header{
 .fieldset-button{
     display: flex;
    justify-content: center;
+   button{
+      margin: 0 auto;
+   }
   
 }
 #snackbar {

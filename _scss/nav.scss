@@ -1,7 +1,5 @@
 @import "utilities/variables";
-nav{
-    background-color:transparent;
-    display:block;
+.nav-content{
     width: 100%;
     height: auto;
     background-color: black;
@@ -9,7 +7,7 @@ nav{
     padding-bottom:1.5em;
     position:fixed;
     z-index:3000;
-   .title{
+   #title{
         display: flex;
         justify-content: center;
         color: $title-color;
@@ -38,6 +36,9 @@ nav{
 .nav-content{
     display: flex;
     justify-content: space-around;
+    button{
+        display: none;
+    }
 }
 .viewport{
     background-image: $background-img;
@@ -69,6 +70,7 @@ nav{
         font-family: Montserrat, "Helvetica Neue",Helvetica,Arial,sans-serif;
         font-weight: 900;
         text-transform: uppercase;
+        text-align: center;
      }
         p{
             color: white;
