@@ -15,7 +15,6 @@ function navfunc(){
     }else{
         content=document.getElementById("menu").style.display = "flex";
         document.getElementById("title").style.display="none";
-    }
+    }  
 
-   
 }
