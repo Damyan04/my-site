@@ -11,9 +11,11 @@
   .service-icons ul{
       display: flex;
       flex-flow: column nowrap;
-      margin: 0;
+      margin: 1em 0 1em 0;
       padding: 0;
-
+      li{
+        margin: 2em 0 2em 0;
+       }
   }
 }
 #portfolio{
