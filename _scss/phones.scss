@@ -152,7 +152,10 @@ footer{
     flex-flow: row nowrap;
     }
     .policy{
-        margin-right: 0.5em;
+        p{
+            margin-right: 0.5em;
+        }
+       
     }
 }
 }
