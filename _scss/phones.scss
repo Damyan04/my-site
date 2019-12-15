@@ -103,8 +103,10 @@ align-items:center;
                 padding-left: 0;
             }
             .timeline-item__date{
-                font-size: 1.3em;
-                padding: 1em;
+                font-size: 1em;
+              span{
+                padding: 1.5em 1.1em 1.5em 1.1em;
+              }
             }
         }
     }
